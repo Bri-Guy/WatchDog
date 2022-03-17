@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>WatchDog</title>
+
+    <!-- These two lines provide automatic page and style reloading when files change -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/lib/client/updater.js" defer></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap">
+
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/elements.css">
+
+    <!-- <script src="https://unpkg.com/scrape-it"></script> -->
+    <!-- <script type="module" src="https://unpkg.com/cheerio@1.0.0-rc.10/lib/index.js"></script> -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="module" src="js/board.js"></script>
+    <!-- <script type="module" src="js/test_trackercard.js"></script> -->
+
+  </head>
+  <body>
+    <header id="header_bar">
+      <h1 class="brand">WatchDog</h1>
+    </header>
+
+    <section id="newTracker">
+      <div>
+        <h1>WatchDog: Amazon Price Tracker</h1>
+
+        <section class="paper">
+          <h2>Create New Tracker</h2>
+          <form id="trackerForm">
+            <label for="trackerTitle">Title:</label>
+            <input type="text" name="title" id="trackerTitle">
+            <label for="trackerURL">Item URL:</label>
+            <input type="text" name="url" id="trackerURL" required>
+            <label for="trackerPrice">Target Price:</label>
+            <input type="text" name="price" id="trackerPrice">
+            <button type="submit" id="addTracker">Add</button>
+          </form>
+        </section>
+      </div>
+    </section>
+
+    <main id="board">
+    </main>
+  </body>
+</html>

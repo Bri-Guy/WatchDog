@@ -1,0 +1,47 @@
+CS193X Final Project Milestone
+=============================
+
+Project Name: WatchDog
+Your Name: Brian Xu
+Your SUNetID: brianxu
+
+Overview
+--------
+
+I've created a sketch of what I'd like the website to look like and how it will function. At this point, I've completed the HTML for the website and I'm working through styling the front-end to look more aesthetic. I've also started on creating some Javascript classes to handle creating new tracker elements and completing the front-end portion of the project.
+
+Looking forward, I'll finish up the styling and Javascript code for the front-end first. Then, I'll work on creating backend code and setting up API requests to perform actions like retrieving stored screenshots or updating settings to a tracker. I also need to look into web-scraping libraries or tools to take a screenshot of a given website.
+
+Project Changes
+---------------
+I'm narrowing the scope of my website a bit so that I'm maintaining trackers on one specific website rather than any arbitrary website. In addition, I'm going to leave out the email notification system as that might be quite tricky to implement for now.
+
+Follow-up
+---------
+The feedback was really helpful, and it definitely gave me suggestions for having a more feasible implementation!
+
+API
+---
+GET /trackers/:id
+
+This will return data associated with a specific website tracker, including the website URL, associated email address, check frequency, and last updated date.
+
+POST /trackers
+
+This will create a new tracker given its associated data.
+
+POST /trackers/:id
+
+This will save new data into an existing website tracker.
+
+External libraries and code
+---------------------------
+I'm looking into external libraries to use for screenshotting or scraping websites. I may also incorporate a library for sending email notifications.
+
+Collaboration and resources
+---------------------------
+None so far
+
+Anything else?
+-------------
+I've been quite busy for the past few weeks, but I'm really excited to be working on this project and I'll definitely reach out for help if I come across anything in the next few weeks!
